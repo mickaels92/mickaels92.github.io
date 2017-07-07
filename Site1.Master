@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="projetTest.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GSB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Menu Boostrap-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!--Menu Boostrap-->
+    <!--Jquery-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+    <!--Jquery-->
+    <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="StyleSheet1.css"/>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">GalaxySwissBourdin</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="Accueil.aspx"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+      <li><a href="Produits.aspx">Nos produits</a></li>
+      <li><a href="Contact.aspx"><span class="glyphicon glyphicon-earphone"></span> Nous contacter</a></li> 
+    </ul>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span> S'identifier</a></li>
+    </ul>
+    </asp:ContentPlaceHolder>
+  </div>
+</nav>
+
+<div>
+      <form id="form1" runat="server">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         </asp:ContentPlaceHolder>
+      </form>
+</div>
+</body>
+</html>
